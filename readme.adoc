@@ -1,0 +1,52 @@
+==== The following repository contains code that I wrote to learn the Reflection API according to the Oracle tutorial, available at:
+
+https://docs.oracle.com/javase/tutorial/reflect/TOC.html[Trail: The Reflection API]
+
+
+.I took the following approach:
+. Write a test that demonstrates a small part of the mechanism of a particular part of the API.
+. Repeat.
+. Prepare exercises to consolidate the knowledge gained.
+
+
+.I divided the study into modules according to the mentioned tutorial:
+. Classes : `com.alisarrian.reflection.classes`
+. Members: `com.alisarrian.reflection.members`
+. Arrays and Enumerated Types: `com.alisarrian.reflection.arrays_enums`
+. *Tasks*: `com.alisarrian.reflection.tasks`
+
+
+.Tasks:
+Following the test name and using the Reflection API, write the test implementations so that the assertions pass without change.
+
+.Detailed description of tasks:
+.. Task 1: `givenPersonClass_whenWantToTakeFields_thenReturnNamesForAllFields`
+Get the fields from the Person class and check that their names match those in the assertion.
+
+.. Task 2: `givenPersonClass_whenWantToTakeModifiers_thenReturnCorrectPersonModifiers`
+Get the modifiers of the Person class and check if they match those in the assertion.
+
+.. Task 3: `givenPersonClass_whenWantToTakePublicMethods_thenReturnCorrectNames`
+Get the public methods available in the Person class and check that their names match those in the assertion.
+
+.. Task 4: `givenPersonClass_whenWantToPrintInfoAboutSpecificPerson_ThenPrintCorrect`
+Using the constructor of the Person class, build an object for which the printInfoAbout method prints a message corresponding to the one in the assertion.
+
+.. Task 5: `givenPersonClass_whenWantToPrintInfoAboutPerson_thenPrintCorrect_usingCtor`
+Using the constructor of the Person class, build an object for which the printInfoAbout method prints a message corresponding to the one in the assertion.
+
+.. Task 6: `givenPersonClass_whenWantToPrintInfoAboutPerson_thenPrintCorrect_usingSet`
+NOT using the constructor of the Person class, build an object for which the printInfoAbout method prints the message corresponding to the one in the assertion.
+
+
+.Remarks
+I would appreciate any comments and/or errors found.
+If you think I should practice something more to get to know this API better, feel free to write.
+
+
+.ToDo List
+.. [.line-through]#Class#
+.. java.lang.reflect.*
+.. Annotation processing
+.. java.beans.Introspector
+.. java.beans.*

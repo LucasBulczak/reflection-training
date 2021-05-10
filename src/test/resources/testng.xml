@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- *************************************************************** -->
+<!-- This file is required                                           -->
+<!-- *************************************************************** -->
+
+<suite name="ReflectionSuite" time-out="10000" verbose="1">
+    <test name="Theory">
+        <groups>
+            <run>
+                <include name="Classes"/>
+                <include name="Members"/>
+                <include name="Arrays and enums"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.alisarrian.reflection.classess.BasicMethodsTest"/>
+            <class name="com.alisarrian.reflection.members.ModifiersTest"/>
+            <class name="com.alisarrian.reflection.members.AnnotationsTest"/>
+            <class name="com.alisarrian.reflection.members.FieldsTest"/>
+            <class name="com.alisarrian.reflection.members.MethodsTest"/>
+            <class name="com.alisarrian.reflection.members.ConstructorsTest"/>
+            <class name="com.alisarrian.reflection.arrays_enums.ArraysTest"/>
+            <class name="com.alisarrian.reflection.arrays_enums.EnumsTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Practise">
+        <groups>
+            <run>
+                <include name="Task: Person"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.alisarrian.reflection.tasks.PersonT1Test"/>
+            <class name="com.alisarrian.reflection.tasks.PersonT2Test"/>
+            <class name="com.alisarrian.reflection.tasks.PersonT3Test"/>
+            <class name="com.alisarrian.reflection.tasks.PersonT4Test"/>
+            <class name="com.alisarrian.reflection.tasks.PersonT5Test"/>
+            <class name="com.alisarrian.reflection.tasks.PersonT6Test"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
